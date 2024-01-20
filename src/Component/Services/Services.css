@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.services-wrapper {
+    position: relative;
+    /* background-image: url("../../Asset/servi.jpg"); */
+    width: 100%;
+   padding: 2rem 0;
+    background: #0d65cd;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.serv-inn {
+    position: relative;
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.surviceHading{
+    color: blanchedalmond;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+.surviceHading h2{
+   
+    font-size: 3rem;
+    color: #ffffff;
+    
+    
+   }
+.surviceHading span{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #d4eaff;
+    animation: SortSurcit 4s infinite;
+    text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgb(38 149 255 / 50%), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+}
+.surviceHading p{
+    
+    font-size: 2rem;
+    color: #ffffff;
+    
+    text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgb(38 149 255 / 50%), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+}
+@keyframes SortSurcit{
+    10%{
+        opacity: 0.5;
+    }
+    12%{
+        opacity: 1;
+    }
+    16%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.4;
+    }
+    23%{
+        opacity: 0.1;
+    }
+    25%{
+        opacity: 0.7;
+    }
+    37%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    72%{
+        opacity: 0.5;
+    }
+    74%{
+        opacity: 0.8;
+    }
+    77%{
+        opacity: 0.4;
+    }
+}
+
+@media screen and (max-width:1140px){
+    .serv-inn {
+        
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+
+}
+@media screen and (max-width:840px){
+
+
+}
+@media screen and (max-width:720px){
+    .serv-inn{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:600px) {
+    .services-wrapper{
+        background: black;
+        overflow-y: scroll;
+    }
+    .serv-inn {
+        position: relative;
+        top: 7rem;
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap:-30px ;
+    }
+   
+}
+

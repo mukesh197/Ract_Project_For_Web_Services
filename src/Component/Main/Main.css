@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap');
+.car-wrapper{
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+}
+.back{
+    height: 100vh;
+    width: 100%;
+    background-color: #0d65cd73;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.top-hading-wraper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.main-text{
+    z-index: 2; 
+    background: none; 
+    font-family: 'Barlow Condensed', sans-serif; 
+}
+.main-text h1{
+    text-transform: uppercase;
+    font-size: 7rem;
+    color: #ffffff;
+    margin: 2rem 0;
+    font-family: "neontubes";
+    font-weight: 800;
+}
+.main-text-animate{
+   
+    height: 75px;
+   text-align: center;
+   margin: 2rem 0;
+    z-index: 5;
+    color: white;
+    overflow: hidden;
+}
+.text-animate h2 {
+    font-size: 75px;
+    color: #ffffff;
+    
+    font-family: 'Martian Mono', monospace;
+    }
+
+.Impration-Image{
+    display: flex;
+    justify-content: center;
+}
+
+.text-animate{
+    
+    position: relative;
+    animation: anim 4s ease-in-out infinite;
+    animation-delay: 1s;
+}
+.Imprasion{
+  
+    z-index: 2;
+}
+.Impration-Image img{
+height: 200px;
+transition: all 0.2s ease-in-out;
+}
+.Impration-Image img:hover{
+   transform: scale(1.1);
+    height: 210px;
+}
+.main-text h1 span{
+    color: #6FFACC;
+    text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+    -webkit-animation: Mainblink 2s infinite alternate;
+    animation: Mainblink 2s infinite alternate;
+}
+
+@-webkit-keyframes Mainblink {
+    30% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0.5;
+    }
+    43% {
+      opacity: 1;
+    }
+    45% {
+      opacity: 0.2;
+    }
+    46% {
+      opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    52%{
+        opacity: 0.6;
+    }
+    55%{
+        opacity: 0.2;
+    }
+    
+  }
+  @keyframes Mainblink {
+    30% {
+        opacity: 1;
+      }
+      42% {
+        opacity: 0.5;
+      }
+      43% {
+        opacity: 1;
+      }
+      45% {
+        opacity: 0.2;
+      }
+      46% {
+        opacity: 1;
+      }
+      50%{
+          opacity: 0;
+      }
+      52%{
+          opacity: 0.6;
+      }
+      55%{
+          opacity: 0.2;
+      }
+  }
+
+
+
+@keyframes anim{
+    0%{
+      top:0;
+    }
+    25%{
+        top:-100px;
+    }
+    50%{
+        top:-200px;
+    }
+    75%{
+        top:-100px;
+    }
+    100%{
+        top:0
+    }
+}
+
+
+@media screen and (max-width:1165px){
+.main-text h1{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+}
+
+
+
+
+@media screen and (max-width:850px) {
+    
+    .main-text h1 {
+  
+        font-size: 3rem;
+    }
+    .text-animate h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .Impration-Image img {
+        height: 120px;
+       
+    }
+}
+@media screen and (max-width:620px) {
+    .text-animate h2 {
+        font-size: 40px;
+    }
+    .main-text h1 {
+        font-size: 2.5rem;
+    }
+    .Impration-Image img {
+        height: 80px;
+    }
+    .Impration-Image img:hover{
+        transform: scale(1.1);
+         height: 100px;
+     }
+}
+@media screen and (max-width:420px){
+
+    .main-text h1 {
+        font-size: 2rem;
+    }
+    .text-animate h2 {
+        font-size: 20px;
+    }
+    .main-text-animate {
+        height: 35px;
+    }
+}

@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "neontubes";
+  src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot");
+  src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff2")
+      format("woff2"),
+    url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff")
+      format("woff"),
+    url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.why-text-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: "neontubes";
+  font-size: 50px;
+  text-align: start;
+}
+.why-text-container h1,
+.why-text-container ul li {
+  display: block;
+  position: relative;
+  -webkit-transform: translateZ(0) translate3D(0, 0, 0);
+  transform: translateZ(0) translate3D(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: opacity;
+}
+
+.why-text-container h1 {
+  color: #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px #e306f3, 0 0 20px rgb(255 0 60 / 50%),
+    0 0 40px #a72ffe, 0 0 100px #d70efe, 0 0 200px #ff003c, 0 0 300px #ff003c,
+    0 0 500px #ff003c, 0 0 1000px #ff003c;
+}
+.why-text-container ul li {
+  font-size: 20px;
+  color: #d4eaff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #2695ff,
+    0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff,
+    0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+}
+
+.block {
+  position: relative;
+  width: 90%;
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+.block:before,
+.block:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    #0548f2,
+    #2105f2,
+    #7005f2,
+    #af05f2,
+    #d205f2,
+    #9b05f2,
+    #5405f2,
+    #1905f2,
+    #055cf2,
+    #0548f2
+  );
+  background-size: 300%;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+.block:after {
+  filter: blur(10px);
+}
+
+.why-wrapper {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  background-color: #0d65cd;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid #e8f97c;
+  padding: 2rem 0;
+  border-bottom: 3px solid #e8f97c;
+  
+}
+.why-text {
+  display: flex;
+  justify-content: center;
+  color: white;
+  z-index: 5;
+}
+.why-text h1 {
+  font-size: 3.9rem;
+}
+
+.why-text ul {
+  width: 100%;
+}
+.why-text ul li {
+  font-size: 2rem;
+  list-style-type: none;
+  list-style-position: outside;
+  margin-bottom: 1rem;
+}
+.why-img {
+  top: 7rem;
+  right: 9rem;
+  height: 350px;
+}
+.fa-circle-check {
+  background: linear-gradient(180.14deg, #001aff 2.81%, #5d0288 99.87%);
+  background-clip: text;
+  color: white;
+}
+.why-Container {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 1320px) {
+  .whyBackgrondImg {
+    display: none;
+  }
+
+  .why-wrapper {
+    
+    height: max-content;
+  }
+  .why-text {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .why-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .why-Container {
+    flex-direction: column;
+  }
+  .why-text {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .why-text-container {
+    text-align: center;
+    width: 80%;
+    font-size: 40px;
+  }
+  .why-text ul li {
+    font-size: 25px;
+    text-align: start;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .why-text h1 {
+    font-size: 3rem;
+    text-decoration: underline;
+  }
+  .why-text ul li {
+    font-size: 1.5rem;
+  }
+  .why-text-container {
+    text-align: center;
+  }
+  .why-text ul {
+    text-align: start;
+  }
+  .why-img {
+    height: 273px;
+    margin-bottom: 7rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .why-text ul li {
+    text-align: center;
+  }
+  .why-text h1 {
+    font-size: 2rem;
+  }
+  .why-text ul {
+    padding-left: 0;
+  }
+  .why-img {
+    width: 100%;
+    height: auto;
+  }
+}

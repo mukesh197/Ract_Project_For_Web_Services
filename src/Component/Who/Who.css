@@ -1,0 +1,210 @@
+@font-face {
+   font-family: 'neontubes';
+   src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot");
+   src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot?#iefix") format("embedded-opentype"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff2") format("woff2"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff") format("woff"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+ }
+ .who-text{
+   display: block;
+  
+
+  width: 100%;
+  height: auto;
+  font-family: "neontubes";
+  font-size: 50px;
+  text-align: start;
+  
+ }
+ .who-text span{
+   display: block;
+  position: relative;
+  -webkit-transform: translateZ(0) translate3D(0, 0, 0);
+          transform: translateZ(0) translate3D(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  will-change: opacity;
+ }
+ .who-text .webdev {
+  color: #e8f97c;
+  text-shadow: 0 0 0 transparent, 0 0 10px #e8f97c, 0 0 20px #e8f97c75, 0 0 40px #e8f97c, 0 0 100px #e8f97c;
+
+ }
+ .who-text .socod {
+   font-size: 30px;
+  
+   color: #ffffff;
+    text-shadow: 0 0 0 transparent, 0 0 10px #f4f6f7, 0 0 20px #eff1f3, 0 0 40px #f7f8f9, 0 0 100px #f5f6f7;
+ 
+ }
+ .NeonText{
+   position: relative;
+
+ }
+  
+
+
+
+
+.who-wrapper{
+  background: #0d65cd;
+  border-top: 3px solid #e8f97c;
+   height: 70%;
+} 
+.img{
+   /* height: 30rem;
+   position: absolute;
+   top: 4.5rem;
+   left: 10rem;
+   z-index: 1; */
+  
+  height: 30rem;
+  animation: rotation 10s infinite linear;
+}
+ 
+.who-content{
+   height: 100%;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+
+
+@keyframes rotation {
+   from {
+       transform: rotate(0deg);
+   }
+   to {
+       transform: rotate(360deg);
+   }
+}
+
+.who-text{
+   color: white;
+}
+.who-text h1{
+   font-size: 3rem;
+}
+.who-text h3{
+   width: 70%;
+   font-size: 1.5rem;
+}
+.GlowingAnimation{
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.GlowingAnimation{
+  position: relative;
+}
+.GlowingAnimation ul{
+position:relative;
+top: 0;
+margin: 1rem 0;
+padding: 0;
+display: flex;
+}
+.GlowingAnimation ul li{
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: animat 1.6s ease-in-out infinite;
+}
+
+@keyframes animat
+{
+  0% ,40%,100%{
+    transform: scale(0.7);
+  }
+  20%{
+    transform: scale(1);
+  }
+}
+.GlowingAnimation ul li:nth-child(1){
+    animation-delay: -4s;
+    background: #dd4b25;
+    box-shadow: 0px 0px 10px 1px rgb(221 75 37), 0px 0px 20px 5px rgb(221 75 37 / 46%), 0px 0px 30px 2px #e9c7bf12;
+}
+.GlowingAnimation ul li:nth-child(2){
+  animation-delay: -3.5s;
+  background: #254bdd;
+  box-shadow: 0px 0px 10px 1px rgb(39 75 218), 0px 0px 20px 5px rgb(37 75 221 / 58%), 0px 0px 30px 2px #254bdd1f;
+
+}
+.GlowingAnimation ul li:nth-child(3){
+  animation-delay: -3s;
+  background: #efd81d;
+  box-shadow: 0px 0px 10px 1px rgb(239 216 29), 0px 0px 20px 5px rgb(239 216 29 / 59%), 0px 0px 30px 2px #dd4a2540;
+
+}
+.GlowingAnimation ul li:nth-child(4){
+  animation-delay: -2.5s;
+  background: #69d6f3;
+  box-shadow: 0px 0px 10px 1px rgb(105 214 243), 0px 0px 20px 5px rgb(105 214 243 / 66%), 0px 0px 30px 2px #cdd8db8a;
+
+}
+.GlowingAnimation ul li:nth-child(5){
+  animation-delay: -2s;
+  background: #fff;
+  box-shadow: 0px 0px 10px 1px rgb(255 255 255), 0px 0px 20px 5px rgb(255 255 255 / 48%), 0px 0px 30px 2px #ffffff47;
+
+}
+.GlowingAnimation ul li:nth-child(6){
+  animation-delay: -2.5s;
+  background: #207196;
+  box-shadow: 0px 0px 10px 1px rgb(32 113 150), 0px 0px 20px 5px rgb(34 113 149 / 55%), 0px 0px 30px 2px #9cc6d987;
+
+}
+.GlowingAnimation ul li:nth-child(7){
+  animation-delay: -1.5s;
+  background: #509941;
+  box-shadow: 0px 0px 10px 1px rgb(80 153 65), 0px 0px 20px 5px rgb(80 153 65 / 56%), 0px 0px 30px 2px #a8df9c;
+
+}
+.GlowingAnimation ul li:nth-child(8){
+  animation-delay: -1s;
+  background: #7248b6;
+  box-shadow: 0px 0px 10px 1px rgb(114 72 182), 0px 0px 20px 5px rgb(114 72 182 / 64%), 0px 0px 30px 2px #ebe8f1cc;
+
+}
+
+
+
+@media only screen and (max-width: 970px) {
+   .who-text{
+      font-size: 40px;
+   }
+   .who-text .socod{
+      font-size: 20px;
+   }
+   .img {
+   
+      height: 20rem;
+     
+  }
+
+ }
+ @media only screen and (max-width: 660px) {
+   
+  .who-content{
+   flex-direction: column;
+  }
+  .who-text{
+   text-align: center;
+  }
+  .img {
+   
+    height: 15rem;
+   
+}
+
+  }
